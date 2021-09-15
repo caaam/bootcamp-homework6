@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 </head>
 <body>
-    <header>
-        <h1>Weather Dashboard</h1>
-      </header>
+    <header class="bg-info">
+        <nav class="navbar">
+            <h1 class="navbar-text">
+                Weather Dashboard
+            </h1>
+          </nav>
+    </header>
+
+    <main>
+        <h4><span id="city-name"></span><img src="" id="icon-img" width="36" height="36"/></h4>
+        <div id="temp">Temperature: </div>
+        <div id="wind">Wind: </div>
+        <div id="humidity">Humidity: </div>
+        <div id="uv-index">UV Index: <span id="index-value"></span></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
